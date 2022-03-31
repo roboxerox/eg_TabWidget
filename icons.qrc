@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/padlock.png</file>
+        <file>images/phone-call.png</file>
+    </qresource>
+</RCC>
