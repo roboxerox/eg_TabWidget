@@ -27,13 +27,13 @@ find_package(Qt5Core REQUIRED)
 set(SOURCES eg_TabWidget.cpp eg_TabWidget.h eg_TabWidget.ui
 	 icons.qrc main.cpp)
 
-add_executable(eg_TabWidget ${SOURCES})
+add_executable(${PROJECT_NAME} ${SOURCES})
 
 add_definitions(-DQT_NO_VERSION_TAGGING)
 
-target_link_libraries(eg_TabWidget Qt5::Widgets)
+target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
 
-qt5_use_modules(eg_TabWidget Core)
+qt5_use_modules(${PROJECT_NAME} Core)
 
 include_directories(. .)
 
